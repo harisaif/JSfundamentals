@@ -1,18 +1,14 @@
-function add7(x){
-    return x+7;
-}
+let answer = parseInt(prompt("Please enter the number, you would like to FizzBuzz up to: "));
 
-function multiply(x, y){
-    return x*y;
+for(let i = 1; i <= answer; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+        console.log("FizzBuzz");
+    }
+    else if(i % 3 === 0){
+        console.log("Fizz");
+    }else if(i % 5 === 0){
+        console.log("Buzz");
+    }else{
+        console.log(i);
+    }
 }
-
-function capitalize(word){
-    return word[0].toUpperCase();
-}
-console.log(capitalize("computer"));
-
-function lastLetter(x){
-    let len = x.length;
-    return x[len-1].toUpperCase();
-}
-console.log(lastLetter("computer"));
